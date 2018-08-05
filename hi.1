@@ -1,0 +1,35 @@
+.Dd July 13, 2018
+.Dt HI 1
+.
+.Sh NAME
+.
+.Nm hi
+.Nd Filter lines from stdin matching a given string.
+.
+.Sh SYNOPSIS
+.
+.Nm
+.Ar text
+.
+.Sh DESCRIPTION
+.
+.Nm
+reads from stdin and prints the lines that contain
+.Em text
+as a substring. The matching text will be highlighted.
+.
+.Sh EXAMPLES
+.
+.Pp
+.Dl $ cat sample
+.Dl hello foo
+.Dl hello bar
+.Dl hello baz
+.Pp
+.Dl $ cat sample | hi ba
+.Dl hello Em ba Ns r
+.Dl hello Em ba Ns z
+.Pp
+.
+.Sh AUTHOR
+.An Michel Martens Aq mail@soveran.com
