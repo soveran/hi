@@ -71,8 +71,6 @@ int main(int argc, char **argv) {
 		exit(1);
 	}
 
-	text = argv[1];
-
 	if (isatty(STDOUT_FILENO)) {
 		format = STYLED;
 	}
