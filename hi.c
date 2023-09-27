@@ -30,7 +30,7 @@ DEALINGS IN THE SOFTWARE.
 #include <unistd.h>
 
 #define NORMAL "%s"
-#define STYLED "\033[33;1;4m%s\033[0m"
+#define STYLED "\033[33;1m%s\033[0m"
 
 static char *format = NORMAL;
 
